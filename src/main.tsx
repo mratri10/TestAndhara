@@ -5,6 +5,7 @@ import {Alert, BackHandler} from 'react-native';
 import LandingScreen from './ui/screen/landing';
 import SplashScreen from './ui/screen/splashScreen';
 import CameraApp from './ui/screen/CameraApp';
+import LoginScreen from './ui/screen/Login';
 
 function Andhara() {
   const Stack = createNativeStackNavigator();
@@ -45,6 +46,13 @@ function Andhara() {
           component={SplashScreen}
           options={{headerShown: false}}
         />
+        <Stack.Group>
+          <Stack.Screen
+            name="login"
+            component={LoginScreen}
+            options={{headerShown: false}}
+          />
+        </Stack.Group>
         <Stack.Group>
           <Stack.Screen
             name="landing"

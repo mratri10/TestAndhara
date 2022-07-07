@@ -14,7 +14,7 @@ function SplashScreen() {
 
   const durationSplash = () => {
     setTimeout(() => {
-      navigation.navigate('landing', {name: 'landing'});
+      navigation.navigate('login');
     }, 3000);
   };
   return (

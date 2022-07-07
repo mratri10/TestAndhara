@@ -7,6 +7,19 @@ export const GETCAMERAURI = 'GETCAMERAURI';
 
 //Validation
 
+export const USERNAMEVALIDATION = {
+  required: {
+    value: true,
+    message: 'Username Harus Diisi',
+  },
+};
+export const PasswordVALIDATION = {
+  required: {
+    value: true,
+    message: 'Password Harus Diisi',
+  },
+};
+
 export const NAMAVALIDATION = {
   required: {
     value: true,

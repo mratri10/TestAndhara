@@ -31,12 +31,12 @@ function LandingScreen() {
           backgroundColor: '#f2f2f2',
         }}>
         <TabWidget
-          name="Home"
+          name="Absensi"
           active={tab == HOMETAB}
           onPress={() => dispatch(tabAction(HOMETAB))}
         />
         <TabWidget
-          name="Scan"
+          name="Form Aktivitas KKP"
           active={tab == SCANTAB}
           onPress={() => dispatch(tabAction(SCANTAB))}
         />
@@ -78,10 +78,10 @@ const TabWidget = (value: TabValue) => {
 const TabScreen = (tab: Itab) => {
   switch (tab.tab) {
     case SCANTAB:
-      return <ScanScreen />;
+      return <HomeScreen />;
 
     default:
-      return <HomeScreen />;
+      return <ScanScreen />;
   }
 };
 

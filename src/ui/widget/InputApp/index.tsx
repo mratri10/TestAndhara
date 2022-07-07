@@ -91,6 +91,7 @@ function InputApp(value: VInput) {
             }
           />
         );
+
       default:
         return (
           <TextInput
@@ -127,6 +128,10 @@ function InputApp(value: VInput) {
     </View>
   );
 }
+
+const CheckListView = () => {
+  return <View></View>;
+};
 
 const DateView = ({onPress, title, dateA, dateB}: DateValue) => {
   return (
