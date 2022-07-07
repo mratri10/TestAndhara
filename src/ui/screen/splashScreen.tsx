@@ -25,7 +25,9 @@ function SplashScreen() {
         backgroundColor: 'blue',
         alignItems: 'center',
       }}>
-      <Text style={{fontSize: 26, color: 'white'}}>Rumahku Terbaik</Text>
+      <Text style={{fontSize: 26, color: 'white', textAlign: 'center'}}>
+        Universitas Muhammadiyah Tangerang
+      </Text>
     </View>
   );
 }

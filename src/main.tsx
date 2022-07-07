@@ -6,6 +6,7 @@ import LandingScreen from './ui/screen/landing';
 import SplashScreen from './ui/screen/splashScreen';
 import CameraApp from './ui/screen/CameraApp';
 import LoginScreen from './ui/screen/Login';
+import FormAbsen from './ui/screen/form_absen';
 
 function Andhara() {
   const Stack = createNativeStackNavigator();
@@ -58,6 +59,13 @@ function Andhara() {
             name="landing"
             component={LandingScreen}
             options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="form_absen"
+            component={FormAbsen}
+            options={{
+              headerShown: false,
+            }}
           />
           <Stack.Screen
             name="camera"
